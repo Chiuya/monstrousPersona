@@ -1,0 +1,37 @@
+$color1: #383838;
+$color2: #FAF5F5;
+$fontFamily1: 'Times New Roman', Times, serif, sans-serif;
+
+/*For phones*/
+body
+	font-family: $fontFamily1
+	line-height: 1.6
+
+main
+	display: flex
+	flex-direction: column
+	height: 100vh
+	scroll-snap-type: y mandatory
+
+.backgroundImage
+    background-image: url("images/test.png")
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+    width: 100vw
+    height: 100vh
+
+
+/*For Tablet*/
+@media only screen and (min-width: 768px)
+
+/*Laptops, Desktops, Monitors and up*/
+@media only screen and (min-width: 992px)
+
+/*max-width 320px	Smartwatches
+  max-width 420px	Smaller devices
+  max-width 600px	Phones
+  min-width 600px	Tablets and Large Phones
+  min-width 768px	Tablets
+  min-width 992px	Laptops and Desktops
+  min-width 1200px	Monitors, Desktops*/
