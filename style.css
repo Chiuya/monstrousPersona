@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+:root {
+  --colour1: #C0B2B2;
+  --colour2: #A5878F;
+  --colour3: #896378;
+  --colour4: #6E4468;
+  --colour5: #4B2A53;
+  --colour6: #271637;
+  --colour7: #0C081C;
+  --white-text: #FAF5F5;
+
+  --main-font: 'VT323', monospace;
+}
+
+/*For phones*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+  }
+
+  /* line*/
+  /* hr {
+    border: none;
+    border-top: 0.25rem double #D9B0A3;
+    color: #D9B0A3;
+    overflow: visible;
+    text-align: center;
+    height: 0.5rem;
+    width: 50%;
+    margin: auto;
+  } */
+  
+  .section {
+    height: 100%;
+    background-color: var(--colour7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* section container*/
+  .centered-box {
+    height: 100%;
+    background-color: var(--colour7);
+    text-align: center;
+    color: var(--white-text);
+  }
+
+  /*question text*/
+  .centered-box h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 3rem;
+  }
+
+
+  /*photo*/
+  .centered-box img {
+    height: 100%;
+    box-shadow: none;
+    object-fit: cover;
+  }
+
+  /*start and share button*/
+  .centered-box a:link, a:visited {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    /*10% opacity white*/
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-text);
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 0.4rem solid var(--white-text);
+    border-radius: 0.3rem;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 0.2rem;
+  }
+
+  /*vertical positioning for button options*/
+  .option1 {
+    bottom: 22%;
+  }
+  .option2 {
+    bottom: 10%;
+  }
+
+  /* .centered-box a:hover, a:active {
+    transform: scale(1.05);
+  } */
+
+  /*fade-in class*/
+  .fade-in {
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .fade-in.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  @media only screen and (min-width: 768px) {
+    /*For Tablet*/
+    /*blank space*/
+  }
+
+  @media only screen and (min-width: 992px) {
+    /*Laptops, Desktops, Monitors and up*/
+    /*blank space*/
+  }
