@@ -19,3 +19,8 @@ fadeIns.forEach(element => {
   // Observe the current element
   observer.observe(element);
 });
+
+
+/*function to add to tally for results*/
+
+/*function to get results after checking if they are available*/
