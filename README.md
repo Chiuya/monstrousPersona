@@ -2,7 +2,7 @@
 What is your horror personality? Take this quiz to find out!
 
 Todo:
-- Set up code to add to tally and get proper results page
+- Set up tally and get proper results page
 - Set up pictures for every page
 - Progress bar w/ short anim
 - Share buttons
