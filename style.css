@@ -82,11 +82,25 @@
     object-fit: cover;
   }
 
-  /*start and share button*/
-  .centered-box a:link, a:visited {
+  .button-container {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 45%;
+    width: 100%;
+    bottom: 0%;
+    /* background-color: white; */
+    text-align: center;
+    color: var(--white-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /*start and share button*/
+  .button-container a:link, .button-container a:visited {
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
     width: 30%;
     /*10% opacity white*/
     background-color: rgba(255, 255, 255, 0.1);
@@ -98,27 +112,7 @@
     border: 0.4rem solid var(--white-text);
     /* border-radius: 0.3rem; */
     transition: transform 0.2s ease-in-out;
-    /* margin-top: 2%; */
-  }
-
-  /*for question option buttons*/
-  .option1 {
-    bottom: 25%;
-    /* width: 30%; */
-  }
-  .option2 {
-    bottom: 5%;
-    /* width: 30%; */
-  }
-
-  /*vertical positioning for homescreen button options*/
-  .top-button {
-    bottom: 22%;
-    /* width: 30%; */
-  }
-  .bottom-button {
-    bottom: 10%;
-    /* width: 30%; */
+    /* margin-top: 2rem; */
   }
 
   /* .centered-box a:hover, a:active {
