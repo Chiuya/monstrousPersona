@@ -11,6 +11,8 @@
   --white-text: #FAF5F5;
 
   --main-font: 'VT323', monospace;
+
+  --progress-border-rad: 0.9rem;
 }
 
 /*For phones*/
@@ -61,6 +63,10 @@
     background-color: var(--colour7);
     text-align: center;
     color: var(--white-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /*question text*/
@@ -100,7 +106,6 @@
   /*start and share button*/
   .button-container a:link, .button-container a:visited {
     /* position: absolute; */
-    /* transform: translate(-50%, -50%); */
     width: 30%;
     /*10% opacity white*/
     background-color: rgba(255, 255, 255, 0.1);
@@ -113,6 +118,26 @@
     /* border-radius: 0.3rem; */
     transition: transform 0.2s ease-in-out;
     /* margin-top: 2rem; */
+  }
+
+  /*progress bar*/
+  .progress-bar-container {
+    width: 38%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--progress-border-rad);
+    overflow: hidden;
+    height: 4%;
+    position: absolute;
+    top: 1.5%;
+    text-align: center;
+    color: var(--white-text);
+    border: 0.5rem solid var(--white-text);
+  }
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--colour1); /*temp*/
+    border-radius: var(--progress-border-rad);
   }
 
   /* .centered-box a:hover, a:active {
