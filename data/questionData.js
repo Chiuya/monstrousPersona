@@ -9,6 +9,14 @@ const forestQuestions = [
             {text: "", value: 1},
             {text: "", value: -1}
         ]
+    },
+    {
+        mbti: "sn",
+        question: "",
+        answers: [
+            {text: "", value: 1},
+            {text: "", value: -1}
+        ]
     }
 ];
 

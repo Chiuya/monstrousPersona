@@ -19,3 +19,11 @@ fadeIns.forEach(element => {
   // Observe the current element
   observer.observe(element);
 });
+
+
+document.getElementById("start").addEventListener('click', function() {
+  theme = "forest";
+  questionCounter = 1;
+  document.location.href = "question pages/questions.html"
+  displayQuestion();
+});
