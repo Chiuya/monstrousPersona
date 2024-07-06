@@ -36,18 +36,6 @@
     height: 100vh;
     scroll-snap-type: y mandatory;
   }
-
-  /* line*/
-  /* hr {
-    border: none;
-    border-top: 0.25rem double #D9B0A3;
-    color: #D9B0A3;
-    overflow: visible;
-    text-align: center;
-    height: 0.5rem;
-    width: 50%;
-    margin: auto;
-  } */
   
   .section {
     height: 100%;
@@ -104,20 +92,17 @@
   }
 
   /*start and share button*/
-  .button-container a:link, .button-container a:visited {
-    /* position: absolute; */
+  .button-container button {
+    font-family: var(--main-font);
     width: 30%;
-    /*10% opacity white*/
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text);
-    padding: 0.2%;
+    padding: 1%;
     text-align: center;
     font-size: 1.75rem;
     text-decoration: none;
     border: 0.4rem solid var(--white-text);
-    /* border-radius: 0.3rem; */
     transition: transform 0.2s ease-in-out;
-    /* margin-top: 2rem; */
   }
 
   /*progress bar*/

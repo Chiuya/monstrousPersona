@@ -10,32 +10,29 @@ document.addEventListener("DOMContentLoaded", () => {
   sn = parseInt(sessionStorage.getItem("sn")) || 0;
   tf = parseInt(sessionStorage.getItem("tf")) || 0;
   jp = parseInt(sessionStorage.getItem("jp")) || 0;
-  
-  /*get ../result pages/path.html for results (path from question pages)*/
-  const getResultPath = () => {
-    let result = "../result pages/";
-    result += ei < 0 ? "e" : "i";
+});
+
+/*get ../result pages/path.html for results*/
+const loadResultPath = () => {
+  let result = "../result pages/";
+  /*TODO: uncomment this after all results pages are in place */
+  // if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
+  //   sessionStorage.clear();
+  //   document.location.href = result + "error.html";
+  // } else {
+  //   result += ei < 0 ? "e" : "i";
+  //   result += sn < 0 ? "s" : "n";
+  //   result += tf < 0 ? "t" : "f";
+  //   result += jp < 0 ? "j" : "p";
+  //   sessionStorage.clear();
+  //   document.location.href = result + ".html";
+  // }
+
+  /*temporary code */
+  result += ei < 0 ? "e" : "i";
     result += sn < 0 ? "s" : "n";
     result += tf < 0 ? "t" : "f";
     result += jp < 0 ? "j" : "p";
-    return result + ".html";
-  };
-
-  const linkElement = document.getElementById("results-button");
-
-  // Check if the element exists
-  if (linkElement) {
-    // console.log("ei init value check: ", ei);
-    // Set the href attribute using the function
-    linkElement.href = getResultPath();
-    // clear results values 
     sessionStorage.clear();
-    // console.log("ei reset value check: ", ei);
-  } else {
-    console.warn("Element with ID 'result-link' not found.");
-  }
-});
-//Log the current result string
-const logResultString = () => {
-  console.log(getResultPath());
+    document.location.href = result + ".html";
 };

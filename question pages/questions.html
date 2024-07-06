@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../style.css">
   <title>Horror Personality Quiz</title>
 </head>
-<body>
+<body onload="displayQuestion()">
   <main>
 
     <section class="section fade-in">
@@ -18,16 +18,16 @@
             <div id="progress" class="progress-bar"></div></div>
           <div class="button-container">
             <!--buttons-->
-            <a id= "answer1" href="click for results.html" target="_self">
-              Test 1</a>
-            <a id= "answer2" href="click for results.html" target="_self">
-              Test 2</a>
+            <button onclick="answer1Handler()" id= "answer1">Test 1</button>
+            <button onclick="answer2Handler()" id= "answer2">Test 1</button>
+
           </div>
         </div>
     </section>
 
   </main>
   <script src="../index.js"></script>
+  <script src="../data/questionData.js"></script>
   <script src="../js/question.js"></script>
   <script src="../js/results.js"></script>
 </body>

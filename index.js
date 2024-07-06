@@ -20,10 +20,16 @@ fadeIns.forEach(element => {
   observer.observe(element);
 });
 
-
-document.getElementById("start").addEventListener('click', function() {
+function start() {
   theme = "forest";
-  questionCounter = 1;
+  questionCounter = 0;
   document.location.href = "question pages/questions.html"
-  displayQuestion();
-});
+}
+
+function shareQuiz() {
+  document.location.href = "https://chiuya.github.io/projectsSite/"
+}
+
+function shareResults() {
+  document.location.href = "https://chiuya.github.io/projectsSite/"
+}
