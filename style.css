@@ -131,7 +131,8 @@
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
     animation: sprite 0.9s steps(2) infinite;
-    transform: translate(-53px, -206%) scale(0.2); 
+    top: 1.5%;
+    transform: translate(-53px, -83.2px) scale(0.2); 
     /*x translate is 0.2 scale times rabbit original width times 2 = 62.4 + a tiny amount*/
   }
 
@@ -152,10 +153,66 @@
   
   @media only screen and (min-width: 768px) {
     /*For Tablet*/
-    /*blank space*/
+    
+    /*question text*/
+    h1 {
+      font-size: 5rem;
+    }
+  
+    .button-container {
+      height: 50%;
+      gap: 3.5rem;
+    }
+  
+    /*option boxes*/
+    .button-container button {
+      width: 70%;
+      padding: 5%;
+      font-size: 3rem;
+      border-width: 0.75rem;
+    }
+  
+    /*progress bar*/
+    .progress-bar-container {
+      top: 3%;
+      border-width: 0.6rem;
+    }
+
+    .progress-sprite {
+      top: 7%;
+      transform: translate(-50px, -130px) scale(0.3);
+    }
   }
 
   @media only screen and (min-width: 992px) {
-    /*Laptops, Desktops, Monitors and up*/
-    /*blank space*/
+    /*iPad Pro, Laptops, Desktops, Monitors and up*/
+
+    /*question text*/
+    h1 {
+      font-size: 5rem;
+    }
+  
+    .button-container {
+      height: 50%;
+      gap: 3.5rem;
+    }
+  
+    /*option boxes*/
+    .button-container button {
+      width: 70%;
+      padding: 5%;
+      font-size: 3rem;
+      border-width: 0.75rem;
+    }
+  
+    /*progress bar*/
+    .progress-bar-container {
+      top: 3%;
+      border-width: 0.6rem;
+    }
+
+    .progress-sprite {
+      top: 7%;
+      transform: translate(-50px, -130px) scale(0.3);
+    }
   }
