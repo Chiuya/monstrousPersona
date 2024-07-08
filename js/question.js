@@ -44,7 +44,7 @@ function displayQuestion() {
     document.getElementById("question").innerHTML = questionObject[questionCounter].question;
     document.getElementById("answer2").innerHTML = questionObject[questionCounter].answers[1].text;
   } else {
-    window.location.href = "../question pages/click for results.html";
+    window.location.href = "../pages/click for results.html";
   }
 
 }

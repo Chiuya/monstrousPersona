@@ -12,27 +12,37 @@ document.addEventListener("DOMContentLoaded", () => {
   jp = parseInt(sessionStorage.getItem("jp")) || 0;
 });
 
-/*get ../result pages/path.html for results*/
-const loadResultPath = () => {
-  let result = "../result pages/";
-  /*TODO: uncomment this after all results pages are in place */
+const getResults = () => {
+  window.location.href = "../pages/results.html";
+}
+
+/*TODO: load results pic*/
+const loadResults = () => {
+  let result = "../images/results/";
+
+    /*TODO: uncomment this after all results pics are in place */
   // if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
   //   sessionStorage.clear();
-  //   document.location.href = result + "error.html";
+  //   document.location.href = "../pages/error.html"
   // } else {
   //   result += ei < 0 ? "e" : "i";
   //   result += sn < 0 ? "s" : "n";
   //   result += tf < 0 ? "t" : "f";
   //   result += jp < 0 ? "j" : "p";
   //   sessionStorage.clear();
-  //   document.location.href = result + ".html";
   // }
 
   /*temporary code */
-  result += ei < 0 ? "e" : "i";
+    result += ei < 0 ? "e" : "i";
     result += sn < 0 ? "s" : "n";
     result += tf < 0 ? "t" : "f";
     result += jp < 0 ? "j" : "p";
     sessionStorage.clear();
-    document.location.href = result + ".html";
+    document.getElementById("result image").src = result + ".png";
 };
+
+/*restart quiz */
+const restartQuiz = () => {
+  sessionStorage.clear();
+  document.location.href = "../index.html";
+}

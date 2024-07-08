@@ -6,20 +6,20 @@
   <link rel="stylesheet" href="../style.css">
   <title>Horror Personality Quiz</title>
 </head>
-<body>
+<body onload="loadResults()">
   <main>
-
     <section class="section fade-in">
         <div class="centered-box fade-in">
-          <h1>INFP</h1>
-          <img src="../images/test.png" alt="Result Image">
+          <h1>RESULTS</h1> <!--TODO: delete this later-->
+          <img id="result image" src="../images/test.png" alt="Result Image">
           <div class="button-container">
             <button onclick="shareResults()">SHARE RESULTS</button>
+            <button onclick="restartQuiz()">RESTART QUIZ</button>
           </div>
         </div>
     </section>
-
   </main>
   <script src="../index.js"></script>
+  <script src="../js/results.js"></script>
 </body>
 </html>

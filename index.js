@@ -23,13 +23,15 @@ fadeIns.forEach(element => {
 function start() {
   theme = "forest";
   questionCounter = 0;
-  document.location.href = "question pages/questions.html"
+  document.location.href = "pages/questions.html"
 }
 
+//TODO
 function shareQuiz() {
   document.location.href = "https://chiuya.github.io/projectsSite/"
 }
 
+//TODO
 function shareResults() {
   document.location.href = "https://chiuya.github.io/projectsSite/"
 }
