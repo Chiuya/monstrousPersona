@@ -20,7 +20,7 @@ const getResults = () => {
 const loadResults = () => {
   let result = "../images/results/";
 
-    /*TODO: uncomment this after all results pics are in place */
+  /*TODO: uncomment this after all results pics are in place */
   // if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
   //   sessionStorage.clear();
   //   document.location.href = "../pages/error.html"

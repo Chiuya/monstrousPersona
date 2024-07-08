@@ -18,7 +18,6 @@ function displayQuestion() {
   if (theme == "forest") {
     questionObject = window.forestQuestions;
     imagePath = forestImagePath;
-
   } else {
     questionObject = window.dungeonQuestions;
     imagePath = dungeonImagePath;
@@ -39,7 +38,11 @@ function displayQuestion() {
       //update answer2 positioning
       document.getElementById("answer2").style.bottom = secondButtonPosition;
     }
-    document.getElementById("progress").style.width = (questionCounter+1)/maxQuestionNumber * 100 + "%";
+    let newWidth = (questionCounter+1)/maxQuestionNumber * 100;
+    //progress bar
+    document.getElementById("progress").style.width = newWidth + "%";
+    //progress sprite
+    document.getElementById("progress sprite").style.left = newWidth * 86 / 100 + "%";
     document.getElementById("image").src = imagePath + questionCounter + ".png";
     document.getElementById("question").innerHTML = questionObject[questionCounter].question;
     document.getElementById("answer2").innerHTML = questionObject[questionCounter].answers[1].text;
@@ -53,6 +56,9 @@ const answer1Handler = () => {
   console.log("answer 1 handler");
   let mbti = questionObject[questionCounter].mbti;
   let value = questionObject[questionCounter].answers[0].value;
+  if (questionObject[questionCounter].answers[0].hasOwnProperty("fork")) {
+    theme = questionObject[questionCounter].answers[0].fork;
+  }
   questionCounter++;
   //sessionStorage.setItem("questionCounter", questionCounter);
   if (mbti == "ei") {
@@ -77,6 +83,9 @@ const answer2Handler = () => {
   console.log("answer 2 handler");
   let mbti = questionObject[questionCounter].mbti;
   let value = questionObject[questionCounter].answers[1].value;
+  if (questionObject[questionCounter].answers[1].hasOwnProperty("fork")) {
+    theme = questionObject[questionCounter].answers[1].fork;
+  }
   questionCounter++;
   //sessionStorage.setItem("questionCounter", questionCounter);
   if (mbti == "ei") {

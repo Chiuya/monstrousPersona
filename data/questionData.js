@@ -3,15 +3,15 @@
 window.forestQuestions = [
     {
         "mbti": "ei",
-        "question": "Question 1",
+        "question": "fQuestion 1",
         "answers": [
-            {"text": "answer 1", "value": 1},
-            {"text": "answer 2", "value": -1}
+            {"text": "click for dungeon", "value": 1, "fork": "dungeon"},
+            {"text": "continue forest", "value": -1}
         ]
     },
     {
         "mbti": "ei",
-        "question": "Question 2",
+        "question": "fQuestion 2",
         "answers": [
             {"text": "q2a1", "value": 1},
             {"text": "q2a2", "value": -1}
@@ -19,7 +19,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 3",
+        "question": "fQuestion 3",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -27,7 +27,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 4",
+        "question": "fQuestion 4",
         "answers": [
             {"text": "q4a1", "value": 1},
             {"text": "q4a2", "value": -1}
@@ -35,7 +35,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 5",
+        "question": "fQuestion 5",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -43,7 +43,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 6",
+        "question": "fQuestion 6",
         "answers": [
             {"text": "q6a1", "value": 1},
             {"text": "q6a2", "value": -1}
@@ -51,7 +51,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 7",
+        "question": "fQuestion 7",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -59,7 +59,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 8",
+        "question": "fQuestion 8",
         "answers": [
             {"text": "q8a1", "value": 1},
             {"text": "q8a2", "value": -1}
@@ -67,7 +67,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 9",
+        "question": "fQuestion 9",
         "answers": [
             {"text": "q9a1", "value": 1},
             {"text": "q9a2", "value": -1}
@@ -75,7 +75,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 10",
+        "question": "fQuestion 10",
         "answers": [
             {"text": "q10a1", "value": 1},
             {"text": "q10a2", "value": -1}
@@ -83,7 +83,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 11",
+        "question": "fQuestion 11",
         "answers": [
             {"text": "q11a1", "value": 1},
             {"text": "q11a2", "value": -1}
@@ -91,7 +91,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 12",
+        "question": "fQuestion 12",
         "answers": [
             {"text": "q12a1", "value": 1},
             {"text": "q12a2", "value": -1}
@@ -99,7 +99,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 13",
+        "question": "fQuestion 13",
         "answers": [
             {"text": "q13a1", "value": 1},
             {"text": "q13a2", "value": -1}
@@ -111,7 +111,7 @@ window.forestQuestions = [
 window.dungeonQuestions = [
     {
         "mbti": "ei",
-        "question": "Question 1",
+        "question": "SHOULD NEVER ENCOUNTER THIS QUESTION",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -119,7 +119,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 2",
+        "question": "dQuestion 2",
         "answers": [
             {"text": "q2a1", "value": 1},
             {"text": "q2a2", "value": -1}
@@ -127,7 +127,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 3",
+        "question": "dQuestion 3",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -135,7 +135,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 4",
+        "question": "dQuestion 4",
         "answers": [
             {"text": "q4a1", "value": 1},
             {"text": "q4a2", "value": -1}
@@ -143,7 +143,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 5",
+        "question": "dQuestion 5",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -151,7 +151,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 6",
+        "question": "dQuestion 6",
         "answers": [
             {"text": "q6a1", "value": 1},
             {"text": "q6a2", "value": -1}
@@ -159,7 +159,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 7",
+        "question": "dQuestion 7",
         "answers": [
             {"text": "answer 1", "value": 1},
             {"text": "answer 2", "value": -1}
@@ -167,7 +167,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 8",
+        "question": "dQuestion 8",
         "answers": [
             {"text": "q8a1", "value": 1},
             {"text": "q8a2", "value": -1}
@@ -175,7 +175,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 9",
+        "question": "dQuestion 9",
         "answers": [
             {"text": "q9a1", "value": 1},
             {"text": "q9a2", "value": -1}
@@ -183,7 +183,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 10",
+        "question": "dQuestion 10",
         "answers": [
             {"text": "q10a1", "value": 1},
             {"text": "q10a2", "value": -1}
@@ -191,7 +191,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 11",
+        "question": "dQuestion 11",
         "answers": [
             {"text": "q11a1", "value": 1},
             {"text": "q11a2", "value": -1}
@@ -199,7 +199,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 12",
+        "question": "dQuestion 12",
         "answers": [
             {"text": "q12a1", "value": 1},
             {"text": "q12a2", "value": -1}
@@ -207,7 +207,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "Question 13",
+        "question": "dQuestion 13",
         "answers": [
             {"text": "q13a1", "value": 1},
             {"text": "q13a2", "value": -1}

@@ -12,7 +12,8 @@
 
   --main-font: 'VT323', monospace;
 
-  --progress-border-rad: 0.9rem;
+  --progress-container-border-rad: 1.25rem;
+  --progress-border-rad: 0.75rem;
 }
 
 /*For phones*/
@@ -65,9 +66,8 @@
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 5%;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
-
 
   /*photo*/
   .centered-box img {
@@ -81,7 +81,6 @@
     height: 45%;
     width: 100%;
     bottom: 0%;
-    /* background-color: white; */
     text-align: center;
     color: var(--white-text);
     display: flex;
@@ -91,29 +90,29 @@
     gap: 2rem;
   }
 
-  /*start and share button*/
+  /*option boxes*/
   .button-container button {
     font-family: var(--main-font);
-    width: 30%;
+    width: 60%;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text);
-    padding: 1%;
+    padding: 3%;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     text-decoration: none;
-    border: 0.4rem solid var(--white-text);
+    border: 0.5rem solid var(--white-text);
     transition: transform 0.2s ease-in-out;
   }
 
   /*progress bar*/
   .progress-bar-container {
-    width: 38%;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: var(--progress-border-rad);
+    border-radius: var(--progress-container-border-rad);
     overflow: hidden;
     height: 4%;
     position: absolute;
-    top: 1.5%;
+    top: 2%;
     text-align: center;
     color: var(--white-text);
     border: 0.5rem solid var(--white-text);
@@ -125,9 +124,20 @@
     border-radius: var(--progress-border-rad);
   }
 
-  /* .centered-box a:hover, a:active {
-    transform: scale(1.05);
-  } */
+  /*rabbit spritesheet-specific TODO: change dimensions*/
+  .progress-sprite {
+    position: absolute;
+    height: 208px;
+    width: 156px;
+    background: url("images/spritesheets/rabbitSpriteSheet.png");
+    animation: sprite 0.9s steps(2) infinite;
+    transform: translate(-53px, -206%) scale(0.2); 
+    /*x translate is 0.2 scale times rabbit original width times 2 = 62.4 + a tiny amount*/
+  }
+
+  @keyframes sprite {
+    to { background-position: -312px; }
+  }
 
   /*fade-in class*/
   .fade-in {
@@ -140,7 +150,6 @@
     transform: translateY(0);
   }
   
-
   @media only screen and (min-width: 768px) {
     /*For Tablet*/
     /*blank space*/
