@@ -63,6 +63,7 @@
     position: absolute;
     top: 35%;
     left: 50%;
+    bottom: 10%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 5%;
@@ -130,13 +131,26 @@
     height: 208px;
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
-    animation: sprite 0.9s steps(2) infinite;
+    animation: prog-sprite 0.9s steps(2) infinite;
     top: 1.5%;
     transform: translate(-53px, -83.2px) scale(0.2); 
     /*x translate is 0.2 scale times rabbit original width times 2 = 62.4 + a tiny amount*/
   }
 
-  @keyframes sprite {
+  @keyframes prog-sprite {
+    to { background-position: -312px; }
+  }
+
+  /*foreground guy*/
+  .foreground-sprite {
+    position: absolute;
+    height: 208px;
+    width: 156px;
+    background: url("images/spritesheets/rabbitSpriteSheet.png");
+    animation: fore-sprite 0.9s steps(2) infinite;
+  }
+
+  @keyframes fore-sprite {
     to { background-position: -312px; }
   }
 
@@ -160,15 +174,15 @@
     }
   
     .button-container {
-      height: 50%;
-      gap: 3.5rem;
+      height: 40%;
+      gap: 2.4rem;
     }
   
     /*option boxes*/
     .button-container button {
       width: 70%;
       padding: 5%;
-      font-size: 3rem;
+      font-size: 2.7rem;
       border-width: 0.75rem;
     }
   

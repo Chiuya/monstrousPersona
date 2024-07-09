@@ -26,12 +26,12 @@ function start() {
   document.location.href = "pages/questions.html"
 }
 
-//TODO
+//TODO: add alert that tells you copied link
 function shareQuiz() {
-  document.location.href = "https://chiuya.github.io/projectsSite/"
+  navigator.clipboard.writeText("https://chiuya.github.io/personalityQ/")
 }
 
-//TODO
+//TODO: idk
 function shareResults() {
   document.location.href = "https://chiuya.github.io/projectsSite/"
 }

@@ -9,7 +9,8 @@ Todo:
 - ~~FIX PROGRESS SPRITE Y TRANSLATION~~
 - ~~Web responsive~~
 - ~~Add hover response in large screens for buttons~~
-- Share buttons set up
+- Share buttons set up - alert for link copied
+- Foreground guy sprite element location js code
 
 - Draw pictures
 - Set up pictures and tally for every question and results page
