@@ -189,30 +189,29 @@
 
     /*question text*/
     h1 {
-      font-size: 5rem;
-    }
-  
+      padding: 5%;
+      font-size: 4rem;
+    } 
+
     .button-container {
-      height: 50%;
-      gap: 3.5rem;
+      gap: 2.5rem;
     }
-  
+
     /*option boxes*/
     .button-container button {
-      width: 70%;
-      padding: 5%;
-      font-size: 3rem;
-      border-width: 0.75rem;
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 3%;
+      font-size: 1.8rem;
+      border-width: 0.5rem;
+      transition-duration: 0.5s;
     }
-  
-    /*progress bar*/
-    .progress-bar-container {
-      top: 3%;
-      border-width: 0.6rem;
+    .button-container button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
     }
 
     .progress-sprite {
-      top: 7%;
-      transform: translate(-50px, -130px) scale(0.3);
+      top: 1.9%;
+      transform: translate(-48px, -80px) scale(0.25);
     }
   }

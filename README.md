@@ -7,8 +7,8 @@ Todo:
 - ~~Progress bar w/ short anim~~
 - ~~Redo positioning of elements with proper picture dimensions~~
 - ~~FIX PROGRESS SPRITE Y TRANSLATION~~
-- Web responsive
-- Add hover response in large screens for buttons
+- ~~Web responsive~~
+- ~~Add hover response in large screens for buttons~~
 - Share buttons set up
 
 - Draw pictures
