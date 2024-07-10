@@ -14,6 +14,9 @@
 
   --progress-container-border-rad: 1.25rem;
   --progress-border-rad: 0.75rem;
+
+  --snackbar-top: 2%;
+  --snackbar-fade: 0.5s;
 }
 
 /*For phones*/
@@ -154,7 +157,7 @@
     to { background-position: -312px; }
   }
 
-  /*fade-in class*/
+  /*fade-in class for html elements*/
   .fade-in {
     opacity: 0;
     transform: translateY(0.5rem);
@@ -164,6 +167,49 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /*toast/snackbar stuff*/
+  #snackbar {
+    visibility: hidden;
+    min-width: 80%;
+    margin-left: -40%; /*min-width / 2 */
+    background-color: rgba(12, 8, 28, 0.8);
+    color: var(--white-text);
+    text-align: center;
+    border-radius: 0.2rem;
+    padding: 1.25rem;
+    position: fixed;
+    left: 50%;
+    top: var(--snackbar-top);
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    /*2s delayed fadeout process*/
+    -webkit-animation: snackbar-fadein var(--snackbar-fade), snackbar-fadeout var(--snackbar-fade) 2s;
+    animation: snackbar-fadein var(--snackbar-fade), snackbar-fadeout var(--snackbar-fade) 2s;
+  }
+  
+  @-webkit-keyframes snackbar-fadein {
+    from {top: 0; opacity: 0;}
+    to {top: var(--snackbar-top); opacity: 1;}
+  }
+  
+  @keyframes snackbar-fadein {
+    from {top: 0; opacity: 0;}
+    to {top: var(--snackbar-top); opacity: 1;}
+  }
+  
+  @-webkit-keyframes snackbar-fadeout {
+    from {top: var(--snackbar-top); opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes snackbar-fadeout {
+    from {top: var(--snackbar-top); opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
   
   @media only screen and (min-width: 768px) {
     /*For Tablet*/

@@ -23,15 +23,18 @@ fadeIns.forEach(element => {
 function start() {
   theme = "forest";
   questionCounter = 0;
-  document.location.href = "pages/questions.html"
+  document.location.href = "pages/questions.html";
 }
 
-//TODO: add alert that tells you copied link
 function shareQuiz() {
-  navigator.clipboard.writeText("https://chiuya.github.io/personalityQ/")
+  navigator.clipboard.writeText("https://chiuya.github.io/personalityQ/");
+  //show snackbar
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000); //2 second timer
 }
 
 //TODO: idk
 function shareResults() {
-  document.location.href = "https://chiuya.github.io/projectsSite/"
+  document.location.href = "https://chiuya.github.io/projectsSite/";
 }
