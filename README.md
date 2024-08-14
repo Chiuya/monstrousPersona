@@ -10,7 +10,8 @@ Todo:
 - ~~Web responsive~~
 - ~~Add hover response in large screens for buttons~~
 - ~~Share buttons set up - alert for link copied~~
-- Foreground guy sprite element location js code (if needed)
+- Foreground guy sprite element location js code to adjust positioning
+- Functions to add mirror result transition
 
 - Draw pictures
 - Set up pictures and tally for every question and results page
