@@ -64,6 +64,7 @@ const answer1Handler = () => {
   let value = questionObject[questionCounter].answers[0].value;
   if (questionObject[questionCounter].answers[0].hasOwnProperty("fork")) {
     theme = questionObject[questionCounter].answers[0].fork;
+    sessionStorage.setItem("theme", theme);
   }
   questionCounter++;
   //sessionStorage.setItem("questionCounter", questionCounter);
