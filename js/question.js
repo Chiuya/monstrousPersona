@@ -46,6 +46,12 @@ function displayQuestion() {
     document.getElementById("image").src = imagePath + questionCounter + ".png";
     document.getElementById("question").innerHTML = questionObject[questionCounter].question;
     document.getElementById("answer2").innerHTML = questionObject[questionCounter].answers[1].text;
+    //TODO: LITTLE GUY POSITIONING
+    if (questionObject[questionCounter].hasOwnProperty("foreground sprite")) {
+      //do stuff - display block/none, left right
+    } else {
+      //default position
+    }
   } else {
     window.location.href = "../pages/click for results.html";
   }

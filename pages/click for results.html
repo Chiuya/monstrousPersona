@@ -6,20 +6,21 @@
   <link rel="stylesheet" href="../style.css">
   <title>Horror Personality Quiz</title>
 </head>
-<body>
+<body onload="loadMirror()">
   <main>
     <section class="section fade-in">
         <div class="centered-box fade-in">
           <h1>Your results...? Test</h1>
-          <img src="../images/phoneTest.png" alt="Home Image">
+          <img id="image" src="../images/forest/mirror.png" alt="Home Image">
           <div class="button-container">
-            <button onclick="getResults()">Click here!</button>
+            <button onclick="loadMirrorCloseup()">See Your Reflection...</button>
           </div>
         </div>
     </section>
 
   </main>
   <script src="../index.js"></script>
+  <script src="../js/question.js"></script>
   <script src="../js/results.js"></script>
 </body>
 </html>

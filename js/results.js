@@ -12,7 +12,39 @@ document.addEventListener("DOMContentLoaded", () => {
   jp = parseInt(sessionStorage.getItem("jp")) || 0;
 });
 
+/*return 4-letter mbti as a string */
 const getResults = () => {
+  let result = '';
+  result += ei < 0 ? "e" : "i";
+  result += sn < 0 ? "s" : "n";
+  result += tf < 0 ? "t" : "f";
+  result += jp < 0 ? "j" : "p";
+  return result;
+}
+
+/*load "mirror.png" of theme into src img*/
+const loadMirror = () => {
+  if (theme == "forest") {
+    document.getElementById("image").src = forestImagePath + "mirror.png";
+  } else {
+    document.getElementById("image").src = dungeonImagePath + "mirror.png";
+  }
+}
+
+/*TODO: load results mon on mirror closeup */
+const loadMirrorCloseup = () => {
+  let mbti = getResults();
+  //get mon corresponding to mbti and put it on top
+  if (theme == "forest") {
+    document.getElementById("image").src = forestImagePath + "closeup.png";
+  } else {
+    document.getElementById("image").src = dungeonImagePath + "closeup.png";
+  }
+  //change button to load results
+  goResults();
+}
+
+const goResults = () => {
   window.location.href = "../pages/results.html";
 }
 
@@ -25,20 +57,12 @@ const loadResults = () => {
   //   sessionStorage.clear();
   //   document.location.href = "../pages/error.html"
   // } else {
-  //   result += ei < 0 ? "e" : "i";
-  //   result += sn < 0 ? "s" : "n";
-  //   result += tf < 0 ? "t" : "f";
-  //   result += jp < 0 ? "j" : "p";
   //   sessionStorage.clear();
   // }
 
   /*temporary code */
-    result += ei < 0 ? "e" : "i";
-    result += sn < 0 ? "s" : "n";
-    result += tf < 0 ? "t" : "f";
-    result += jp < 0 ? "j" : "p";
     sessionStorage.clear();
-    document.getElementById("result image").src = result + ".png";
+    document.getElementById("result image").src = result + getResults() + ".png";
 };
 
 /*restart quiz */
