@@ -61,12 +61,11 @@ const loadResults = () => {
   // }
 
   /*temporary code */
-    sessionStorage.clear();
+    //sessionStorage.clear();
     document.getElementById("result image").src = result + getResults() + ".png";
 };
 
 /*restart quiz */
 const restartQuiz = () => {
-  sessionStorage.clear();
   document.location.href = "../index.html";
 }

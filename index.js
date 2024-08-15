@@ -21,6 +21,7 @@ fadeIns.forEach(element => {
 });
 
 function start() {
+  sessionStorage.clear();
   theme = "forest";
   questionCounter = 0;
   document.location.href = "pages/questions.html";

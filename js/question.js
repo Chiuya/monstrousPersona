@@ -5,13 +5,15 @@ let imagePath;
 const maxQuestionNumber = 13;
 const middleButtonPosition = "50%";
 const secondButtonPosition = "20%";
-const forestImagePath = "../images/forest/"
-const dungeonImagePath = "../images/dungeon/"
+const defaultSpriteTop = "45%";
+const defaultSpriteLeft = "35%";
+const forestImagePath = "../images/forest/";
+const dungeonImagePath = "../images/dungeon/";
 
 
 document.addEventListener("DOMContentLoaded", () => {
   theme = sessionStorage.getItem("theme") || "forest";
-  //questionCounter = parseInt(sessionStorage.getItem("questionCounter")) || 0;
+  questionCounter = parseInt(sessionStorage.getItem("questionCounter")) || 0;
 });
 
 function displayQuestion() {
@@ -23,18 +25,19 @@ function displayQuestion() {
     imagePath = dungeonImagePath;
   }
   if (questionCounter < maxQuestionNumber) {
-    if (questionObject[questionCounter].mbti == "") { //transition page
-      if (document.getElementById("answer1").style.display === "block") { // hide answer1
-        document.getElementById("answer1").style.display = "none";
-      }
+    let currQuestion = questionObject[questionCounter];
+    if (currQuestion.mbti == "") { //transition page
+      //if (document.getElementById("answer1").style.display === "block") { // hide answer1 -is the guard necessary?
+      document.getElementById("answer1").style.display = "none";
+      //}
       // update answer2 positioning
       document.getElementById("answer2").style.bottom = middleButtonPosition;
     } else {
-      if (document.getElementById("answer1").style.display === "none") { // show answer1
-        document.getElementById("answer1").style.display = "block";
-      }
+      //if (document.getElementById("answer1").style.display === "none") { // show answer1
+      document.getElementById("answer1").style.display = "block";
+      //}
       //change text for answer 1
-      document.getElementById("answer1").innerHTML = questionObject[questionCounter].answers[0].text;
+      document.getElementById("answer1").innerHTML = currQuestion.answers[0].text;
       //update answer2 positioning
       document.getElementById("answer2").style.bottom = secondButtonPosition;
     }
@@ -44,13 +47,27 @@ function displayQuestion() {
     //progress sprite
     document.getElementById("progress sprite").style.left = newWidth * 86 / 100 + "%";
     document.getElementById("image").src = imagePath + questionCounter + ".png";
-    document.getElementById("question").innerHTML = questionObject[questionCounter].question;
-    document.getElementById("answer2").innerHTML = questionObject[questionCounter].answers[1].text;
-    //TODO: LITTLE GUY POSITIONING
-    if (questionObject[questionCounter].hasOwnProperty("foreground sprite")) {
-      //do stuff - display block/none, left right
+    document.getElementById("question").innerHTML = currQuestion.question;
+    document.getElementById("answer2").innerHTML = currQuestion.answers[1].text;
+    if (currQuestion.hasOwnProperty("foregroundSprite")) {
+      if (currQuestion.foregroundSprite.hasOwnProperty("isActive")) {
+        if (!currQuestion.foregroundSprite.isActive) {
+          document.getElementById("foreground sprite").style.display = "none";
+        }
+      } else {
+        document.getElementById("foreground sprite").style.display = "block";
+      }
+      if (currQuestion.foregroundSprite.hasOwnProperty("position")) {
+        document.getElementById("foreground sprite").style.top = currQuestion.foregroundSprite.position[0];
+        document.getElementById("foreground sprite").style.left = currQuestion.foregroundSprite.position[1];
+      } else {
+        document.getElementById("foreground sprite").style.top = defaultSpriteTop;
+        document.getElementById("foreground sprite").style.left = defaultSpriteLeft;
+      }
     } else {
-      //default position
+      document.getElementById("foreground sprite").style.display = "block";
+      document.getElementById("foreground sprite").style.top = defaultSpriteTop;
+      document.getElementById("foreground sprite").style.left = defaultSpriteLeft;
     }
   } else {
     window.location.href = "../pages/click for results.html";
@@ -60,14 +77,15 @@ function displayQuestion() {
 
 const answer1Handler = () => {
   console.log("answer 1 handler");
-  let mbti = questionObject[questionCounter].mbti;
-  let value = questionObject[questionCounter].answers[0].value;
-  if (questionObject[questionCounter].answers[0].hasOwnProperty("fork")) {
-    theme = questionObject[questionCounter].answers[0].fork;
+  let currQuestion = questionObject[questionCounter];
+  let mbti = currQuestion.mbti;
+  let value = currQuestion.answers[0].value;
+  if (currQuestion.answers[0].hasOwnProperty("fork")) {
+    theme = currQuestion.answers[0].fork;
     sessionStorage.setItem("theme", theme);
   }
   questionCounter++;
-  //sessionStorage.setItem("questionCounter", questionCounter);
+  sessionStorage.setItem("questionCounter", questionCounter);
   if (mbti == "ei") {
     ei += value;
     sessionStorage.setItem("ei", ei);
@@ -88,13 +106,15 @@ const answer1Handler = () => {
 
 const answer2Handler = () => {
   console.log("answer 2 handler");
-  let mbti = questionObject[questionCounter].mbti;
-  let value = questionObject[questionCounter].answers[1].value;
-  if (questionObject[questionCounter].answers[1].hasOwnProperty("fork")) {
-    theme = questionObject[questionCounter].answers[1].fork;
+  let currQuestion = questionObject[questionCounter];
+  let mbti = currQuestion.mbti;
+  let value = currQuestion.answers[1].value;
+  if (currQuestion.answers[1].hasOwnProperty("fork")) {
+    theme = currQuestion.answers[1].fork;
+    sessionStorage.setItem("theme", theme);
   }
   questionCounter++;
-  //sessionStorage.setItem("questionCounter", questionCounter);
+  sessionStorage.setItem("questionCounter", questionCounter);
   if (mbti == "ei") {
     ei += value;
     sessionStorage.setItem("ei", ei);

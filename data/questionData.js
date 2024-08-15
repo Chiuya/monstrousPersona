@@ -1,4 +1,12 @@
 /*question text, answers text*/
+/*Structure:
+    [mbti: ei or sn or tf or jp,
+    question: text of question,
+    answers: [{answer 1, answer 2}],   each answer has "text", "value" in int, and "fork" (the theme to change to) which can be null
+    foregroundSprite: { <--can be null
+    isActive: boolean that tells whether or not the foreground sprite is present, <--can be null
+    position: array [top%, left%]}] <--can be null */
+
 //FOREST
 window.forestQuestions = [
     {
@@ -7,7 +15,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "click for dungeon", "value": 1, "fork": "dungeon"},
             {"text": "continue forest", "value": -1}
-        ]
+        ],
+        "foregroundSprite": {"isActive": false}
     },
     {
         "mbti": "ei",
@@ -15,7 +24,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "q2a1", "value": 1},
             {"text": "q2a2", "value": -1}
-        ]
+        ],
+        "foregroundSprite": {"position": ["10%", "10%"]}
     },
     {
         "mbti": "ei",
