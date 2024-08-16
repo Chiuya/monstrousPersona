@@ -24,21 +24,17 @@ const getResults = () => {
 
 /*load "mirror.png" of theme into src img*/
 const loadMirror = () => {
-  let mbti = getResults();
-  document.getElementById("mon image").style.backgroundImage = "url('../images/monsters/" + mbti + ".png')";
-  document.getElementById("mon image").style.display = "none";
-  document.getElementById("go to result button").style.display = "none";
   document.getElementById("image").src = "../images/" + theme + "/mirror.png";
+}
+
+const goReflection = () => {
+  window.location.href = "../pages/reflection.html";
 }
 
 /*load results mon on mirror closeup */
 const loadMirrorCloseup = () => {
-  //TODO: add a fade-in transition (class doesnt work?f)
-  document.getElementById("mon image").style.display = "block";
-  document.getElementById("image").src = "../images/forest/closeup.png";
-  document.getElementById("result button").style.display = "none";
-  document.getElementById("header").style.display = "none";
-  document.getElementById("go to result button").style.display = "block";
+  let mbti = getResults();
+  document.getElementById("mon image").style.backgroundImage = "url('../images/monsters/" + mbti + ".png')";
 }
 
 const goResults = () => {
@@ -52,7 +48,7 @@ const loadResults = () => {
   /*TODO: uncomment this after all results pics are in place */
   // if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
   //   sessionStorage.clear();
-  //   document.location.href = "../pages/error.html" <- make error page lead back to index
+  //   document.location.href = "../pages/error.html"
   // }
 
   /*temporary code */
