@@ -24,44 +24,38 @@ const getResults = () => {
 
 /*load "mirror.png" of theme into src img*/
 const loadMirror = () => {
-  if (theme == "forest") {
-    document.getElementById("image").src = forestImagePath + "mirror.png";
-  } else {
-    document.getElementById("image").src = dungeonImagePath + "mirror.png";
-  }
+  let mbti = getResults();
+  document.getElementById("mon image").style.backgroundImage = "url('../images/monsters/" + mbti + ".png')";
+  document.getElementById("mon image").style.display = "none";
+  document.getElementById("go to result button").style.display = "none";
+  document.getElementById("image").src = "../images/" + theme + "/mirror.png";
 }
 
-/*TODO: load results mon on mirror closeup */
+/*load results mon on mirror closeup */
 const loadMirrorCloseup = () => {
-  let mbti = getResults();
-  //get mon corresponding to mbti and put it on top
-  if (theme == "forest") {
-    document.getElementById("image").src = forestImagePath + "closeup.png";
-  } else {
-    document.getElementById("image").src = dungeonImagePath + "closeup.png";
-  }
-  //change button to load results
-  goResults();
+  //TODO: add a fade-in transition (class doesnt work?f)
+  document.getElementById("mon image").style.display = "block";
+  document.getElementById("image").src = "../images/forest/closeup.png";
+  document.getElementById("result button").style.display = "none";
+  document.getElementById("header").style.display = "none";
+  document.getElementById("go to result button").style.display = "block";
 }
 
 const goResults = () => {
   window.location.href = "../pages/results.html";
 }
 
-/*TODO: load results pic*/
+/*load results pic*/
 const loadResults = () => {
   let result = "../images/results/";
 
   /*TODO: uncomment this after all results pics are in place */
   // if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
   //   sessionStorage.clear();
-  //   document.location.href = "../pages/error.html"
-  // } else {
-  //   sessionStorage.clear();
+  //   document.location.href = "../pages/error.html" <- make error page lead back to index
   // }
 
   /*temporary code */
-    //sessionStorage.clear();
     document.getElementById("result image").src = result + getResults() + ".png";
 };
 

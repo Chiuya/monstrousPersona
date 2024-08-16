@@ -2,9 +2,12 @@
 /*Structure:
     [mbti: ei or sn or tf or jp,
     question: text of question,
-    answers: [{answer 1, answer 2}],   each answer has "text", "value" in int, and "fork" (the theme to change to) which can be null
+    answers: [{answer 1, answer 2}],   
+            each answer has "text", "value" in int, and 
+            "fork" (the theme to change to) which can be null
     foregroundSprite: { <--can be null
-    isActive: boolean that tells whether or not the foreground sprite is present, <--can be null
+    isActive: boolean that tells whether or not the foreground 
+            sprite is present, <--can be null
     position: array [top%, left%]}] <--can be null */
 
 //FOREST

@@ -49,6 +49,9 @@ function displayQuestion() {
     document.getElementById("image").src = imagePath + questionCounter + ".png";
     document.getElementById("question").innerHTML = currQuestion.question;
     document.getElementById("answer2").innerHTML = currQuestion.answers[1].text;
+    //foreground sprite
+    //(assume same dimensions and # of frames for each spritesheet)
+    document.getElementById("foreground sprite").style.backgroundImage = "url('" + imagePath + questionCounter + "sprite.png')";
     if (currQuestion.hasOwnProperty("foregroundSprite")) {
       if (currQuestion.foregroundSprite.hasOwnProperty("isActive")) {
         if (!currQuestion.foregroundSprite.isActive) {

@@ -11,6 +11,8 @@ Todo:
 - ~~Add hover response in large screens for buttons~~
 - ~~Share buttons set up - alert for link copied~~
 - ~~Foreground guy sprite element location js code to adjust positioning~~
-- Functions to add mirror result transition
+- ~~Functions to add mirror result transition~~
+- ~~Foreground guy spritesheets dependent on question code in displayQuestion()~~
+- Add a fade-in transition to mirror result transition
 - Set up pictures and tally for every question and results page
 - Spritesheets for: foreground guy, progress bar guy

@@ -210,6 +210,16 @@
     to {top: 0; opacity: 0;}
   }
 
+  /*mon image on top of mirror*/
+  .mon-image {
+    position: absolute;
+    height: 320px;
+    width: 320px;
+    background: url("images/monsters/enfp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
   
   @media only screen and (min-width: 768px) {
     /*For Tablet*/
