@@ -14,5 +14,6 @@ Todo:
 - ~~Functions to add mirror result transition~~
 - ~~Foreground guy spritesheets dependent on question code in displayQuestion()~~
 - ~~Add a fade-in transition to mirror result transition~~
+- ~~Fix font size and spacing in all dimensions~~
 - Set up pictures and tally for every question and results page
 - Spritesheets for: foreground guy, progress bar guy

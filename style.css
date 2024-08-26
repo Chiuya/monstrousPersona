@@ -64,13 +64,11 @@
   /*question text*/
   h1 {
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: 15%;
     bottom: 10%;
-    transform: translate(-50%, -50%);
     margin: 0;
-    padding: 5%;
-    font-size: 3.5rem;
+    padding: 1%;
+    font-size: 2.5rem;
   }
 
   /*photo*/
@@ -97,7 +95,7 @@
   /*option boxes*/
   .button-container button {
     font-family: var(--main-font);
-    width: 60%;
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text);
     padding: 3%;
@@ -151,6 +149,7 @@
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
     animation: fore-sprite 0.9s steps(2) infinite;
+    transform: scale(0.7);
   }
 
   @keyframes fore-sprite {
@@ -226,20 +225,18 @@
     
     /*question text*/
     h1 {
-      font-size: 5rem;
+      font-size: 3.2rem;
     }
   
     .button-container {
       height: 40%;
-      gap: 2.4rem;
+      gap: 2rem;
     }
   
     /*option boxes*/
     .button-container button {
-      width: 70%;
-      padding: 5%;
-      font-size: 2.7rem;
-      border-width: 0.75rem;
+      font-size: 2rem;
+      border-width: 0.7rem;
     }
   
     /*progress bar*/
@@ -252,6 +249,11 @@
       top: 7%;
       transform: translate(-50px, -130px) scale(0.3);
     }
+
+    /*foreground guy*/
+    .foreground-sprite {
+      transform: scale(0.6);
+    }
   }
 
   @media only screen and (min-width: 992px) {
@@ -259,21 +261,22 @@
 
     /*question text*/
     h1 {
-      padding: 5%;
-      font-size: 4rem;
+      padding: 2%;
+      font-size: 3rem;
+      line-height: 4rem;
     } 
 
     .button-container {
-      gap: 2.5rem;
+      gap: 2.2rem;
     }
 
     /*option boxes*/
     .button-container button {
-      width: 60%;
+      width: 80%;
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 3%;
+      padding: 4%;
       font-size: 1.8rem;
-      border-width: 0.5rem;
+      border-width: 0.65rem;
       transition-duration: 0.5s;
     }
     .button-container button:hover {
@@ -283,5 +286,10 @@
     .progress-sprite {
       top: 1.9%;
       transform: translate(-48px, -80px) scale(0.25);
+    }
+
+    /*foreground guy*/
+    .foreground-sprite {
+      transform: scale(0.8);
     }
   }
