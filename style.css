@@ -66,9 +66,10 @@
     position: absolute;
     top: 15%;
     bottom: 10%;
-    margin: 0;
+    margin: 5%;
     padding: 1%;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 
   /*photo*/
@@ -95,14 +96,14 @@
   /*option boxes*/
   .button-container button {
     font-family: var(--main-font);
-    width: 70%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text);
     padding: 3%;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-decoration: none;
-    border: 0.5rem solid var(--white-text);
+    border: 0.3rem solid var(--white-text);
     transition: transform 0.2s ease-in-out;
   }
 
@@ -212,8 +213,8 @@
   /*mon image on top of mirror*/
   .mon-image {
     position: absolute;
-    height: 320px;
-    width: 320px;
+    height: 480px;
+    width: 480px;
     background: url("images/monsters/enfp.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -225,7 +226,9 @@
     
     /*question text*/
     h1 {
-      font-size: 3.2rem;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      top: 12%;
     }
   
     .button-container {
@@ -236,7 +239,6 @@
     /*option boxes*/
     .button-container button {
       font-size: 2rem;
-      border-width: 0.7rem;
     }
   
     /*progress bar*/
@@ -262,8 +264,8 @@
     /*question text*/
     h1 {
       padding: 2%;
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
     } 
 
     .button-container {
@@ -272,11 +274,9 @@
 
     /*option boxes*/
     .button-container button {
-      width: 80%;
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 4%;
+      padding: 3%;
       font-size: 1.8rem;
-      border-width: 0.65rem;
       transition-duration: 0.5s;
     }
     .button-container button:hover {
