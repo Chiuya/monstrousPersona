@@ -15,8 +15,7 @@ Todo:
 - ~~Foreground guy spritesheets dependent on question code in displayQuestion()~~
 - ~~Add a fade-in transition to mirror result transition~~
 - ~~Fix font size and spacing in all dimensions~~
+- ~~Set up pictures and tally for every question and results page (16 reflections, 16 results)~~
+- ~~Set up questions - Bella~~
 - What is causing sizing bug on tablets/phones - Bella
-- Set up questions - Bella
 - Spritesheets for: foreground guy (7), progress bar guy (1) - Martin
-
-- Set up pictures and tally for every question and results page (16 reflections, 16 results) on 31st

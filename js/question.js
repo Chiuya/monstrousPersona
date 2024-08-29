@@ -102,7 +102,7 @@ const answer1Handler = () => {
     jp += value;
     sessionStorage.setItem("jp", jp);
   } else {
-    //transition page, do nothing?
+    //transition page, do nothing
   }
   displayQuestion();
 }
@@ -131,7 +131,7 @@ const answer2Handler = () => {
     jp += value;
     sessionStorage.setItem("jp", jp);
   } else {
-    //transition page, do nothing?
+    //transition page, do nothing
   }
   displayQuestion();
 }

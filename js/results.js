@@ -34,7 +34,7 @@ const goReflection = () => {
 /*load results mon on mirror closeup */
 const loadMirrorCloseup = () => {
   let mbti = getResults();
-  document.getElementById("mon image").style.backgroundImage = "url('../images/monsters/" + mbti + ".png')";
+  document.getElementById("image").src = "../images/monsters/" + mbti + ".png";
 }
 
 const goResults = () => {
@@ -45,14 +45,12 @@ const goResults = () => {
 const loadResults = () => {
   let result = "../images/results/";
 
-  /*TODO: uncomment this after all results pics are in place */
-  // if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
-  //   sessionStorage.clear();
-  //   document.location.href = "../pages/error.html"
-  // }
-
-  /*temporary code */
+  if (ei == 0 || sn == 0 || tf == 0 || jp == 0) { //shouldn't happen
+    sessionStorage.clear();
+    document.location.href = "../pages/error.html"
+  } else {
     document.getElementById("result image").src = result + getResults() + ".png";
+  }
 };
 
 /*restart quiz */
