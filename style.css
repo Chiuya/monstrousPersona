@@ -218,19 +218,19 @@
     
     /*question text*/
     h1 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-      top: 12%;
+      font-size: 2.3rem;
+      line-height: 2.5rem;
+      top: 10%;
     }
   
     .button-container {
-      height: 40%;
-      gap: 2rem;
+      height: 35%;
+      gap: 1.75rem;
     }
   
     /*option boxes*/
     .button-container button {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     /*progress bar*/
@@ -246,7 +246,7 @@
 
     /*foreground guy*/
     .foreground-sprite {
-      transform: scale(0.6);
+      transform: scale(0.5);
     }
   }
 
