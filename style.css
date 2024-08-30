@@ -51,7 +51,7 @@
   /* section container*/
   .centered-box {
     height: 100%;
-    /* width: auto; */
+    width: fit-content;
     background-color: var(--colour7);
     text-align: center;
     color: var(--white-text);
@@ -79,7 +79,7 @@
     object-fit: cover;
   }
 
-  .centered-box .button-container {
+  .button-container {
     position: absolute;
     height: 42%;
     width: 100%;
@@ -254,7 +254,7 @@
     /*question text*/
     h1 {
       padding: 2%;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       line-height: 2.5rem;
     } 
 

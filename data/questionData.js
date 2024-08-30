@@ -114,7 +114,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "You find yourself looking into a still lake. In your reflection you see...",
+        "question": "In the reflection of a still lake, you see...",
         "answers": [
             {"text": "A disfigured monstrosity.", "value": 1},
             {"text": "The epitome of beauty.", "value": -1}
@@ -225,7 +225,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "You find yourself looking into a dusty mirror. In your reflection you see...",
+        "question": "In the reflection of a dusty mirror, you see...",
         "answers": [
             {"text": "The epitome of beauty.", "value": 1},
             {"text": "A disfigured monstrosity.", "value": -1}
