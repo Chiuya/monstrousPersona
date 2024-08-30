@@ -3,7 +3,7 @@ let questionCounter = 0;
 let questionObject;
 let imagePath;
 const maxQuestionNumber = 13;
-const middleButtonPosition = "50%";
+const middleButtonPosition = "40%";
 const secondButtonPosition = "20%";
 const defaultSpriteTop = "45%";
 const defaultSpriteLeft = "35%";

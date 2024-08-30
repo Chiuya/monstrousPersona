@@ -68,8 +68,9 @@
     bottom: 10%;
     margin: 5%;
     padding: 1%;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2.3rem;
+    letter-spacing: 0.15rem;
   }
 
   /*photo*/
@@ -101,7 +102,7 @@
     color: var(--white-text);
     padding: 3%;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-decoration: none;
     border: 0.3rem solid var(--white-text);
     transition: transform 0.2s ease-in-out;
