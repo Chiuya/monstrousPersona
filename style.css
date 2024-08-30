@@ -29,8 +29,8 @@
   body {
     font-family: var(--main-font);
     line-height: 1.6;
-    overflow: hidden;
-    height: 100%;
+    /* overflow: hidden; */
+    /* height: 100%; */
     background-color: var(--colour7);
   }
 
@@ -51,12 +51,12 @@
   /* section container*/
   .centered-box {
     height: 100%;
-    width: auto;
+    /* width: auto; */
     background-color: var(--colour7);
     text-align: center;
     color: var(--white-text);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
   }
@@ -64,7 +64,7 @@
   /*question text*/
   h1 {
     position: absolute;
-    top: 15%;
+    top: 12%;
     bottom: 10%;
     margin: 5%;
     padding: 1%;
@@ -79,9 +79,9 @@
     object-fit: cover;
   }
 
-  .button-container {
+  .centered-box .button-container {
     position: absolute;
-    height: 45%;
+    height: 42%;
     width: 100%;
     bottom: 0%;
     text-align: center;
@@ -208,16 +208,6 @@
   @keyframes snackbar-fadeout {
     from {top: var(--snackbar-top); opacity: 1;}
     to {top: 0; opacity: 0;}
-  }
-
-  /*mon image on top of mirror*/
-  .mon-image {
-    position: absolute;
-    height: 480px;
-    width: 480px;
-    background: url("images/monsters/enfp.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   
