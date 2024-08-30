@@ -29,8 +29,8 @@
   body {
     font-family: var(--main-font);
     line-height: 1.6;
-    /* overflow: hidden; */
-    /* height: 100%; */
+    overflow: hidden;
+    height: 100%;
     background-color: var(--colour7);
   }
 
@@ -151,7 +151,7 @@
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
     animation: fore-sprite 0.9s steps(2) infinite;
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 
   @keyframes fore-sprite {
