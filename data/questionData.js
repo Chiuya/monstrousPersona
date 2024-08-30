@@ -185,7 +185,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "jp",
-        "question": "A gust of wind sweepts the halls, extinguishing all the torches.",
+        "question": "A gust of wind sweeps the halls, extinguishing all the torches.",
         "answers": [
             {"text": "What a pain, I have to relight them all.", "value": -1},
             {"text": "Perfect, they won't see me coming!", "value": 1}
