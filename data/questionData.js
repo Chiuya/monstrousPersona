@@ -50,7 +50,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "sn",
-        "question": "What is the first thing people notice within your domain?",
+        "question": "What is the first thing they notice within your domain?",
         "answers": [
             {"text": "The scent of rot and scattered shards of bone.", "value": -1},
             {"text": "The feeling of being watched and followed.", "value": 1}
@@ -85,7 +85,7 @@ window.forestQuestions = [
         "question": "Your prey attempts to fight back!",
         "answers": [
             {"text": "Yawn -- nothing I haven't seen before.", "value": -1},
-            {"text": "Respect their courage, however futile.", "value": 1}
+            {"text": "Their courage is admirable, however futile.", "value": 1}
         ]
     },
     {
@@ -100,8 +100,8 @@ window.forestQuestions = [
         "mbti": "tf",
         "question": "Your prey pleads for their life.",
         "answers": [
-            {"text": "They say they’re a single father? Wait...", "value": 1},
-            {"text": "It's just a job, nothing personal.", "value": -1}
+            {"text": "Oh, they’re REALLY scared...", "value": 1},
+            {"text": "This is just who I am, nothing personal.", "value": -1}
         ]
     },
     {
@@ -161,7 +161,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "sn",
-        "question": "What is the first thing people notice within your domain?",
+        "question": "What is the first thing they notice within your domain?",
         "answers": [
             {"text": "The scent of blood and scattered shards of bone.", "value": -1},
             {"text": "The feeling of being watched and followed.", "value": 1}
@@ -196,7 +196,7 @@ window.dungeonQuestions = [
         "question": "Your prey attempts to fight back!",
         "answers": [
             {"text": "Yawn -- nothing I haven't seen before.", "value": -1},
-            {"text": "Respect their courage, however futile.", "value": 1}
+            {"text": "Their courage is admirable, however futile.", "value": 1}
         ]
     },
     {
@@ -211,8 +211,8 @@ window.dungeonQuestions = [
         "mbti": "tf",
         "question": "Your prey pleads for their life.",
         "answers": [
-            {"text": "They say they’re a single father? Wait...", "value": 1},
-            {"text": "It's just a job, nothing personal.", "value": -1}
+            {"text": "Oh, they’re REALLY scared...", "value": 1},
+            {"text": "This is just who I am, nothing personal.", "value": -1}
         ]
     },
     {
