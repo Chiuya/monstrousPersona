@@ -257,8 +257,8 @@
     /*question text*/
     h1 {
       padding: 2%;
-      font-size: 2.2rem;
-      line-height: 2rem;
+      font-size: 2rem;
+      line-height: 1.8rem;
       /* font-weight: lighter; */
     } 
 
@@ -273,14 +273,19 @@
       font-size: 1.6rem;
     }
 
+    /*progress bar*/
+    .progress-bar-container {
+      height: 4.5%;
+    }
+
     .progress-sprite {
-      top: 1.9%;
-      transform: translate(-40px, -70px) scale(0.42);
+      top: 1.7%;
+      transform: translate(-40px, -70px) scale(0.32);
     }
 
     /*foreground guy*/
     .foreground-sprite {
-      transform: scale(0.8);
+      transform: scale(0.65);
     }
   }
 
@@ -289,12 +294,12 @@
 
     /*question text*/
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
     } 
 
     /*option boxes*/
     .button-container button{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .button-container button:hover {
@@ -302,11 +307,12 @@
     }
 
     .progress-sprite {
-      transform: translate(-40px, -70px) scale(0.35);
+      top: 1.5%;
+      transform: translate(-40px, -70px) scale(0.27);
     }
 
     /*foreground guy*/
     .foreground-sprite {
-      transform: scale(0.65);
+      transform: scale(0.5);
     }
   }
