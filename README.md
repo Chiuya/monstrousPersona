@@ -19,3 +19,4 @@ Todo:
 - ~~Set up questions~~
 - ~~What is causing sizing bug on tablets/phones~~
 - Spritesheets for: foreground guy (7), progress bar guy (1) - Martin
+- Adjust foreground sprite positioning code

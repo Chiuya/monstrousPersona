@@ -3,10 +3,10 @@ let questionCounter = 0;
 let questionObject;
 let imagePath;
 const maxQuestionNumber = 13;
-const middleButtonPosition = "40%";
+const middleButtonPosition = "30%"; /*doesnt work */
 const secondButtonPosition = "20%";
-const defaultSpriteTop = "45%";
-const defaultSpriteLeft = "35%";
+const defaultSpriteTop = "40%";
+const defaultSpriteLeft = "25%";
 const forestImagePath = "../images/forest/";
 const dungeonImagePath = "../images/dungeon/";
 
@@ -45,7 +45,7 @@ function displayQuestion() {
     //progress bar
     document.getElementById("progress").style.width = newWidth + "%";
     //progress sprite
-    document.getElementById("progress sprite").style.left = newWidth * 86 / 100 + "%";
+    document.getElementById("progress sprite").style.left = newWidth * 0.8 + "%";
     document.getElementById("image").src = imagePath + questionCounter + ".png";
     document.getElementById("question").innerHTML = currQuestion.question;
     document.getElementById("answer2").innerHTML = currQuestion.answers[1].text;
@@ -61,6 +61,7 @@ function displayQuestion() {
         document.getElementById("foreground sprite").style.display = "block";
       }
       if (currQuestion.foregroundSprite.hasOwnProperty("position")) {
+        //TODO: POSSIBLY ADJUST TO ADD TO STYLE.CSS POSITIONS - DIFF WEB RESPONSIVENESS
         document.getElementById("foreground sprite").style.top = currQuestion.foregroundSprite.position[0];
         document.getElementById("foreground sprite").style.left = currQuestion.foregroundSprite.position[1];
       } else {

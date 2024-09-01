@@ -28,7 +28,7 @@
   
   body {
     font-family: var(--main-font);
-    line-height: 1.6;
+    line-height: 1.5;
     overflow: auto;
     height: 100%;
     background-color: var(--colour7);
@@ -69,9 +69,10 @@
     bottom: 10%;
     margin: 5%;
     padding: 1%;
-    font-size: 1.7rem;
-    line-height: 2.3rem;
-    letter-spacing: 0.15rem;
+    font-size: 1.5rem;
+    font-weight: lighter; /*normal=400, bold=700*/
+    line-height: 1.7rem;
+    letter-spacing: 0.1rem;
   }
 
   /*photo*/
@@ -83,7 +84,7 @@
 
   .button-container {
     position: absolute;
-    height: 42%;
+    height: 40%;
     width: 100%;
     bottom: 0%;
     text-align: center;
@@ -92,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.7rem;
   }
 
   /*option boxes*/
@@ -101,11 +102,12 @@
     width: 80%;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text);
-    padding: 3%;
+    padding: 2.5%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    line-height: 1.3rem;
     text-decoration: none;
-    border: 0.3rem solid var(--white-text);
+    border: 0.25rem solid var(--white-text);
     transition: transform 0.2s ease-in-out;
   }
 
@@ -136,8 +138,8 @@
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
     animation: prog-sprite 0.9s steps(2) infinite;
-    top: 1.5%;
-    transform: translate(-53px, -83.2px) scale(0.2); 
+    top: 1.25%;
+    transform: translate(-53px, -83.2px) scale(0.25); 
     /*x translate is 0.2 scale times rabbit original width times 2 = 62.4 + a tiny amount*/
   }
 
@@ -152,7 +154,7 @@
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
     animation: fore-sprite 0.9s steps(2) infinite;
-    transform: scale(0.5);
+    transform: scale(0.4);
   }
 
   @keyframes fore-sprite {
@@ -218,19 +220,18 @@
     
     /*question text*/
     h1 {
-      font-size: 2.3rem;
-      line-height: 2.5rem;
+      font-size: 2rem;
+      line-height: 1.8rem;
       top: 10%;
     }
   
     .button-container {
-      height: 35%;
       gap: 1.75rem;
     }
   
     /*option boxes*/
     .button-container button {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
   
     /*progress bar*/
@@ -241,12 +242,12 @@
 
     .progress-sprite {
       top: 7%;
-      transform: translate(-50px, -130px) scale(0.3);
+      transform: translate(-38px, -125px) scale(0.28);
     }
 
     /*foreground guy*/
     .foreground-sprite {
-      transform: scale(0.5);
+      transform: scale(0.45);
     }
   }
 
@@ -256,25 +257,24 @@
     /*question text*/
     h1 {
       padding: 2%;
-      font-size: 2.4rem;
-      line-height: 2.5rem;
+      font-size: 2.2rem;
+      line-height: 2rem;
     } 
 
     .button-container {
-      gap: 2.2rem;
+      height: 35%;
+      gap: 1.6rem;
     }
 
     /*option boxes*/
     .button-container button{
-      background-color: rgba(255, 255, 255, 0.1);
       padding: 3%;
-      font-size: 1.8rem;
-      transition-duration: 0.5s;
+      font-size: 1.6rem;
     }
 
     .progress-sprite {
       top: 1.9%;
-      transform: translate(-48px, -80px) scale(0.25);
+      transform: translate(-40px, -70px) scale(0.42);
     }
 
     /*foreground guy*/
@@ -298,5 +298,14 @@
 
     .button-container button:hover {
       background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .progress-sprite {
+      transform: translate(-40px, -70px) scale(0.35);
+    }
+
+    /*foreground guy*/
+    .foreground-sprite {
+      transform: scale(0.65);
     }
   }
