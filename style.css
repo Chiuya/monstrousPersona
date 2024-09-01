@@ -70,7 +70,7 @@
     margin: 5%;
     padding: 1%;
     font-size: 1.5rem;
-    font-weight: lighter; /*normal=400, bold=700*/
+    /* font-weight: lighter; normal=400, bold=700 */
     line-height: 1.7rem;
     letter-spacing: 0.1rem;
   }
@@ -215,8 +215,8 @@
   }
 
   
-  @media only screen and (min-width: 768px) {
-    /*For Tablet*/
+  @media only screen and (min-width: 744px) {
+    /*For iPad Mini 6 and up*/
     
     /*question text*/
     h1 {
@@ -259,6 +259,7 @@
       padding: 2%;
       font-size: 2.2rem;
       line-height: 2rem;
+      /* font-weight: lighter; */
     } 
 
     .button-container {
