@@ -3,10 +3,10 @@ let questionCounter = 0;
 let questionObject;
 let imagePath;
 const maxQuestionNumber = 13;
-const middleButtonPosition = "30%"; /*doesnt work */
+const middleButtonPosition = "30%"; /*doesnt work hah useless const*/
 const secondButtonPosition = "20%";
-const defaultSpriteTop = "40%";
-const defaultSpriteLeft = "25%";
+const defaultSpriteTop = window.getComputedStyle(document.getElementById("foreground sprite")).getPropertyValue('top'); //px
+const defaultSpriteLeft = window.getComputedStyle(document.getElementById("foreground sprite")).getPropertyValue('left'); //px
 const forestImagePath = "../images/forest/";
 const dungeonImagePath = "../images/dungeon/";
 
@@ -61,9 +61,11 @@ function displayQuestion() {
         document.getElementById("foreground sprite").style.display = "block";
       }
       if (currQuestion.foregroundSprite.hasOwnProperty("position")) {
-        //TODO: POSSIBLY ADJUST TO ADD TO STYLE.CSS POSITIONS - DIFF WEB RESPONSIVENESS
-        document.getElementById("foreground sprite").style.top = currQuestion.foregroundSprite.position[0];
-        document.getElementById("foreground sprite").style.left = currQuestion.foregroundSprite.position[1];
+        // console.log(parseFloat(defaultSpriteTop));
+        // console.log(currQuestion.foregroundSprite.position[0] + "px");
+        // console.log(parseFloat(defaultSpriteTop) + currQuestion.foregroundSprite.position[0] + "px");
+        document.getElementById("foreground sprite").style.top = parseFloat(defaultSpriteTop) + currQuestion.foregroundSprite.position[0] + "px";
+        document.getElementById("foreground sprite").style.left = parseFloat(defaultSpriteLeft) + currQuestion.foregroundSprite.position[1] + "px";
       } else {
         document.getElementById("foreground sprite").style.top = defaultSpriteTop;
         document.getElementById("foreground sprite").style.left = defaultSpriteLeft;
@@ -80,7 +82,7 @@ function displayQuestion() {
 }
 
 const answer1Handler = () => {
-  console.log("answer 1 handler");
+  // console.log("answer 1 handler");
   let currQuestion = questionObject[questionCounter];
   let mbti = currQuestion.mbti;
   let value = currQuestion.answers[0].value;
@@ -109,7 +111,7 @@ const answer1Handler = () => {
 }
 
 const answer2Handler = () => {
-  console.log("answer 2 handler");
+  // console.log("answer 2 handler");
   let currQuestion = questionObject[questionCounter];
   let mbti = currQuestion.mbti;
   let value = currQuestion.answers[1].value;

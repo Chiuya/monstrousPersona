@@ -9,7 +9,7 @@
     foregroundSprite: { <--can be null
     isActive: boolean that tells whether or not the foreground 
             sprite is present, <--can be null
-    position: array [top%, left%]}] <--can be null */
+    position: array [top, left]}] adds onto default position values in px <--can be null */
 
 //FOREST
 window.forestQuestions = [
@@ -38,7 +38,7 @@ window.forestQuestions = [
             {"text": "hidden", "value": 0},
             {"text": "Fresh meat...", "value": 0}
         ],
-        "foregroundSprite": {"position": ["50%", "10%"]}
+        "foregroundSprite": {"position": [-20, 20]}
     },
     {
         "mbti": "jp",
@@ -149,7 +149,7 @@ window.dungeonQuestions = [
             {"text": "hidden", "value": 0},
             {"text": "Fresh meat...", "value": 0}
         ],
-        "foregroundSprite": {"position": ["50%", "10%"]}
+        "foregroundSprite": {"position": [20, -20]}
     },
     {
         "mbti": "jp",
