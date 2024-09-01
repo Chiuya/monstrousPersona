@@ -257,44 +257,45 @@
     /*question text*/
     h1 {
       padding: 2%;
-      font-size: 2rem;
-      line-height: 1.8rem;
+      font-size: 1.6rem;
+      line-height: 1.4rem;
       /* font-weight: lighter; */
     } 
 
     .button-container {
       height: 35%;
-      gap: 1.6rem;
+      gap: 1.4rem;
     }
 
     /*option boxes*/
     .button-container button{
       padding: 3%;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
 
     /*progress bar*/
     .progress-bar-container {
       height: 4.5%;
+      border-width: 0.4rem;
     }
 
     .progress-sprite {
-      top: 1.7%;
-      transform: translate(-40px, -70px) scale(0.32);
+      top: 1%;
+      transform: translate(-53px, -75px) scale(0.23);
     }
 
     /*foreground guy*/
     .foreground-sprite {
-      transform: scale(0.65);
+      transform: scale(0.4);
     }
   }
 
   @media only screen and (min-width: 1200px) {
-    /*Desktops, Monitors and up*/
+    /* Laptop, Desktops, Monitors and up*/
 
     /*question text*/
     h1 {
-      font-size: 2rem;
+      font-size: 1.55rem;
     } 
 
     /*option boxes*/
@@ -307,12 +308,11 @@
     }
 
     .progress-sprite {
-      top: 1.5%;
-      transform: translate(-40px, -70px) scale(0.27);
+      transform: translate(-54px, -75px) scale(0.22);
     }
 
     /*foreground guy*/
     .foreground-sprite {
-      transform: scale(0.5);
+      transform: scale(0.45);
     }
   }
