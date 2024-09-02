@@ -35,7 +35,6 @@ function shareQuiz() {
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000); //2 second timer
 }
 
-//TODO: idk dude i dont even wanna do this one screw it
-function shareResults() {
-  document.location.href = "https://chiuya.github.io/projectsSite/";
+function goRepo() {
+  window.open("https://github.com/Chiuya/personalityQ", "_blank");
 }

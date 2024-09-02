@@ -159,6 +159,15 @@
     left: 25%;
   }
 
+  /*creds hyperlink*/
+  a {
+    position: absolute;
+    bottom: 7%;
+    font-size: 1.1rem;
+    color: var(--white-text);
+    font-weight: lighter;
+  }
+
   @keyframes fore-sprite {
     to { background-position: -312px; }
   }
@@ -253,6 +262,12 @@
       top: 50%;
       left: 35%;
     }
+
+    /*creds hyperlink*/
+    a {
+      bottom: 6%;
+      font-size: 1rem;
+    }
   }
 
   @media only screen and (min-width: 992px) {
@@ -293,6 +308,11 @@
       transform: scale(0.4);
       top: 42%;
       left: 27%;
+    }
+
+    /*creds hyperlink*/
+    a {
+      bottom: 5%;
     }
   }
 
