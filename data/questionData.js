@@ -17,7 +17,7 @@ window.forestQuestions = [
         "mbti": "ei",
         "question": "What does your domain look like?",
         "answers": [
-            {"text": "Beams of moonlight shine through the brick windows.", "value": 1, "fork": "dungeon"},
+            {"text": "Beams of moonlight illuminate your dungeon.", "value": 1, "fork": "dungeon"},
             {"text": "A shroud of darkness envelopes the trees.", "value": -1}
         ],
         "foregroundSprite": {"isActive": false}
