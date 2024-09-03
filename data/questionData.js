@@ -38,7 +38,7 @@ window.forestQuestions = [
             {"text": "hidden", "value": 0},
             {"text": "Fresh meat...", "value": 0}
         ],
-        "foregroundSprite": {"position": [-20, 20]}
+        "foregroundSprite": {"position": [50, 20]}
     },
     {
         "mbti": "jp",
@@ -46,7 +46,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "Can't let anyone interfere!", "value": -1},
             {"text": "Let's see if more humans take the bait.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 0]}
     },
     {
         "mbti": "sn",
@@ -62,7 +63,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "I've been meaning to try a new trap...", "value": 1},
             {"text": "With my most efficient strategy.", "value": -1}
-        ]
+        ],
+        "foregroundSprite": {"position": [30, 20]}
     },
     {
         "mbti": "sn",
@@ -70,7 +72,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "Footprints and the scent of sweat in the air.", "value": -1},
             {"text": "My instincts have never been wrong.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [10, 10]}
     },
     {
         "mbti": "jp",
@@ -94,7 +97,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "Everything is in its place -- no room for error.", "value": -1},
             {"text": "Put it where I'm sure they'll run.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [40, 30]}
     },
     {
         "mbti": "tf",
@@ -102,7 +106,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "Oh, they’re REALLY scared...", "value": 1},
             {"text": "This is just who I am, nothing personal.", "value": -1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 10]}
     },
     {
         "mbti": "tf",
@@ -165,7 +170,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "The scent of blood and scattered shards of bone.", "value": -1},
             {"text": "The feeling of being watched and followed.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, -40]}
     },
     {
         "mbti": "jp",
@@ -173,7 +179,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "I've been meaning to try a new trap...", "value": 1},
             {"text": "With my most efficient strategy.", "value": -1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 0]}
     },
     {
         "mbti": "sn",
@@ -181,7 +188,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "Footprints and the scent of sweat in the air.", "value": -1},
             {"text": "My instincts have never been wrong.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 40]}
     },
     {
         "mbti": "jp",
@@ -189,7 +197,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "What a pain, I have to relight them all.", "value": -1},
             {"text": "Perfect, they won't see me coming!", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [-10, 0]}
     },
     {
         "mbti": "tf",
@@ -197,7 +206,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "Yawn -- nothing I haven't seen before.", "value": -1},
             {"text": "Their courage is admirable, however futile.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [-45, 30]}
     },
     {
         "mbti": "sn",
@@ -205,7 +215,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "Everything is in its place -- no room for error.", "value": -1},
             {"text": "Put it where I'm sure they'll run.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [-100, 20]}
     },
     {
         "mbti": "tf",
@@ -213,7 +224,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "Oh, they’re REALLY scared...", "value": 1},
             {"text": "This is just who I am, nothing personal.", "value": -1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 0]}
     },
     {
         "mbti": "tf",
@@ -221,7 +233,8 @@ window.dungeonQuestions = [
         "answers": [
             {"text": "It was all planned--this was inevitable.", "value": -1},
             {"text": "You've run enough--it's time to face your fate.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [-25, 0]}
     },
     {
         "mbti": "ei",
