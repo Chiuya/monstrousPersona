@@ -16,7 +16,7 @@ Inspired by Myers-Briggs Type Indicators (MBTI), CosmosPersona, and CakeResume.
 [LinkedIn](https://www.linkedin.com/in/bella-y-605078209)
 
 ## Josh Hodiny:
-- Monster Designs: Designed and drew all monsters.
+- Monster Designs: Designed and drew all monsters in Aseprite.
 - Question Writing: Helped write and proofread quiz questions and answers.
 - Sprite Design: Helped design little man sprites.
 - Monster Descriptions: Helped write the lore and descriptions of monsters.
@@ -26,6 +26,6 @@ Inspired by Myers-Briggs Type Indicators (MBTI), CosmosPersona, and CakeResume.
 ## Martin Uy:
 - Quiz Concept/Page Design: Collaborated in designing the layout of the quiz.
 - Monster Results: Designed monster result pages.
-- Sprite Design: Drew and finalized little man sprites.
+- Sprite Design: Drew and finalized little man sprites in Aseprite.
 - Question Writing: Helped write and proofread quiz questions and answers.  
 [Portfolio](https://martins-career-cave-c8941c.webflow.io/)
