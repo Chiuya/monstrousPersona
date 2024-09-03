@@ -1,5 +1,5 @@
 # Monstrous Persona
-What is your monstrous persona? Take this personality quiz to find out!  
+What is your monstrous persona? Take this quiz to find out!  
 Monstrous Persona offers a fun, first-person adventure where you step into the role of a monster. Explore multiple routes through engaging questions, each revealing a different aspect of your monstrous identity.  
 Explore unique and original monsters, lore, and custom art in an immersive experience that brings your inner monster to life.
 
