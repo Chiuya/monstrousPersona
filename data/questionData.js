@@ -15,9 +15,9 @@
 window.forestQuestions = [
     {
         "mbti": "ei",
-        "question": "What does your domain look like?",
+        "question": "What do your hunting grounds look like?",
         "answers": [
-            {"text": "Beams of moonlight illuminate your dungeon.", "value": 1, "fork": "dungeon"},
+            {"text": "Beams of moonlight illuminate my dungeon.", "value": 1, "fork": "dungeon"},
             {"text": "A shroud of darkness envelopes the trees.", "value": -1}
         ],
         "foregroundSprite": {"isActive": false}
@@ -140,7 +140,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "ei",
-        "question": "You notice a ruby amulet you've never seen before...",
+        "question": "You notice an amulet you've never seen before...",
         "answers": [
             {"text": "Let's not touch it for now...", "value": 1},
             {"text": "Ooh it's so shiny...", "value": -1}
