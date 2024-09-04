@@ -199,7 +199,7 @@ window.dungeonQuestions = [
             {"text": "What a pain, I have to relight them all.", "value": -1},
             {"text": "Perfect, they won't see me coming!", "value": 1}
         ],
-        "foregroundSprite": {"position": [40, -40]}
+        "foregroundSprite": {"position": [50, -40]}
     },
     {
         "mbti": "tf",

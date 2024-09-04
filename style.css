@@ -155,8 +155,8 @@
     background: url("images/forest/0sprite.png");
     animation: fore-sprite 2s steps(4) infinite;
     transform: scale(0.4);
-    top: 45%;
-    left: 22%;
+    top: 36%;
+    left: 10%;
   }
 
   /*rabbit foreground*/
@@ -167,8 +167,8 @@
     background: url("images/spritesheets/rabbitSpriteSheet.png");
     animation: rabb-sprite 0.9s steps(2) infinite;
     transform: scale(0.4);
-    top: 40%;
-    left: 25%;
+    top: 42%;
+    left: 28%;
   }
 
   /*creds hyperlink*/
@@ -275,7 +275,7 @@
     /*foreground guy*/
     .foreground-sprite {
       transform: scale(0.45);
-      top: 45%;
+      top: 48%;
       left: 25%;
     }
 
@@ -283,7 +283,7 @@
     .rabbit-sprite {
       transform: scale(0.45);
       top: 50%;
-      left: 35%;
+      left: 33%;
     }
 
     /*creds hyperlink*/
@@ -336,8 +336,8 @@
     /*rabbit foreground*/
     .rabbit-sprite {
       transform: scale(0.4);
-      top: 42%;
-      left: 27%;
+      top: 50%;
+      left: 35%;
     }
 
     /*creds hyperlink*/
@@ -377,7 +377,7 @@
     /*rabbit foreground*/
     .rabbit-sprite {
       transform: scale(0.45);
-      top: 40%;
-      left: 25%;
+      top: 50%;
+      left: 30%;
     }
   }
