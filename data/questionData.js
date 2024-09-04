@@ -73,7 +73,7 @@ window.forestQuestions = [
             {"text": "Footprints and the scent of sweat in the air.", "value": -1},
             {"text": "My instincts have never been wrong.", "value": 1}
         ],
-        "foregroundSprite": {"position": [10, 10]}
+        "foregroundSprite": {"position": [20, 10]}
     },
     {
         "mbti": "jp",
@@ -81,7 +81,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "What a pain, I have to readjust all my traps", "value": -1},
             {"text": "This will hide my footprints!", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 10]}
     },
     {
         "mbti": "tf",
@@ -115,7 +116,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "It was all planned--this was inevitable.", "value": -1},
             {"text": "You've run enough--it's time to face your fate.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 10]}
     },
     {
         "mbti": "ei",
