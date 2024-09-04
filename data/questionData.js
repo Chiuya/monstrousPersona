@@ -37,6 +37,14 @@ window.forestQuestions = [
         "answers": [
             {"text": "hidden", "value": 0},
             {"text": "Fresh meat...", "value": 0}
+        ]
+    },
+    {
+        "mbti": "sn",
+        "question": "What is the first thing they notice within your domain?",
+        "answers": [
+            {"text": "The scent of rot and scattered shards of bone.", "value": -1},
+            {"text": "The feeling of being watched and followed.", "value": 1}
         ],
         "foregroundSprite": {"position": [50, 20]}
     },
@@ -50,18 +58,10 @@ window.forestQuestions = [
         "foregroundSprite": {"position": [20, 0]}
     },
     {
-        "mbti": "sn",
-        "question": "What is the first thing they notice within your domain?",
-        "answers": [
-            {"text": "The scent of rot and scattered shards of bone.", "value": -1},
-            {"text": "The feeling of being watched and followed.", "value": 1}
-        ]
-    },
-    {
         "mbti": "jp",
         "question": "How do you pursue your prey?",
         "answers": [
-            {"text": "I've been meaning to try a new trap...", "value": 1},
+            {"text": "I've been meaning to try a new method...", "value": 1},
             {"text": "With my most efficient strategy.", "value": -1}
         ],
         "foregroundSprite": {"position": [30, 20]}
@@ -157,14 +157,6 @@ window.dungeonQuestions = [
         "foregroundSprite": {"position": [20, -20]}
     },
     {
-        "mbti": "jp",
-        "question": "The human cries out for help.",
-        "answers": [
-            {"text": "Can't let anyone interfere!", "value": -1},
-            {"text": "Let's see if more humans take the bait.", "value": 1}
-        ]
-    },
-    {
         "mbti": "sn",
         "question": "What is the first thing they notice within your domain?",
         "answers": [
@@ -175,12 +167,21 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "jp",
+        "question": "The human cries out for help.",
+        "answers": [
+            {"text": "Can't let anyone interfere!", "value": -1},
+            {"text": "Let's see if more humans take the bait.", "value": 1}
+        ],
+        "foregroundSprite": {"position": [80, -50]}
+    },
+    {
+        "mbti": "jp",
         "question": "How do you pursue your prey?",
         "answers": [
-            {"text": "I've been meaning to try a new trap...", "value": 1},
+            {"text": "I've been meaning to try a new method...", "value": 1},
             {"text": "With my most efficient strategy.", "value": -1}
         ],
-        "foregroundSprite": {"position": [20, 0]}
+        "foregroundSprite": {"position": [50, -20]}
     },
     {
         "mbti": "sn",
@@ -189,7 +190,7 @@ window.dungeonQuestions = [
             {"text": "Footprints and the scent of sweat in the air.", "value": -1},
             {"text": "My instincts have never been wrong.", "value": 1}
         ],
-        "foregroundSprite": {"position": [20, 40]}
+        "foregroundSprite": {"position": [25, 0]}
     },
     {
         "mbti": "jp",
@@ -198,7 +199,7 @@ window.dungeonQuestions = [
             {"text": "What a pain, I have to relight them all.", "value": -1},
             {"text": "Perfect, they won't see me coming!", "value": 1}
         ],
-        "foregroundSprite": {"position": [-10, 0]}
+        "foregroundSprite": {"position": [40, -40]}
     },
     {
         "mbti": "tf",
@@ -207,7 +208,7 @@ window.dungeonQuestions = [
             {"text": "Yawn -- nothing I haven't seen before.", "value": -1},
             {"text": "Their courage is admirable, however futile.", "value": 1}
         ],
-        "foregroundSprite": {"position": [-45, 30]}
+        "foregroundSprite": {"position": [-20, 20]}
     },
     {
         "mbti": "sn",
@@ -216,7 +217,7 @@ window.dungeonQuestions = [
             {"text": "Everything is in its place -- no room for error.", "value": -1},
             {"text": "Put it where I'm sure they'll run.", "value": 1}
         ],
-        "foregroundSprite": {"position": [-100, 20]}
+        "foregroundSprite": {"position": [-20, 20]}
     },
     {
         "mbti": "tf",

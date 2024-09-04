@@ -131,7 +131,7 @@
     border-radius: var(--progress-border-rad);
   }
 
-  /*rabbit spritesheet-specific TODO: change dimensions*/
+  /*rabbit spritesheet-specific*/
   .progress-sprite {
     position: absolute;
     height: 208px;
@@ -150,10 +150,22 @@
   /*foreground guy*/
   .foreground-sprite {
     position: absolute;
+    height: 220px;
+    width: 220px;
+    background: url("images/forest/0sprite.png");
+    animation: fore-sprite 2s steps(4) infinite;
+    transform: scale(0.4);
+    top: 45%;
+    left: 22%;
+  }
+
+  /*rabbit foreground*/
+  .rabbit-sprite {
+    position: absolute;
     height: 208px;
     width: 156px;
     background: url("images/spritesheets/rabbitSpriteSheet.png");
-    animation: fore-sprite 0.9s steps(2) infinite;
+    animation: rabb-sprite 0.9s steps(2) infinite;
     transform: scale(0.4);
     top: 40%;
     left: 25%;
@@ -169,6 +181,10 @@
   }
 
   @keyframes fore-sprite {
+    to { background-position: -880px; }
+  }
+
+  @keyframes rabb-sprite {
     to { background-position: -312px; }
   }
 
@@ -259,6 +275,13 @@
     /*foreground guy*/
     .foreground-sprite {
       transform: scale(0.45);
+      top: 45%;
+      left: 25%;
+    }
+
+    /*rabbit foreground*/
+    .rabbit-sprite {
+      transform: scale(0.45);
       top: 50%;
       left: 35%;
     }
@@ -306,6 +329,13 @@
     /*foreground guy*/
     .foreground-sprite {
       transform: scale(0.4);
+      top: 46%;
+      left: 22%;
+    }
+
+    /*rabbit foreground*/
+    .rabbit-sprite {
+      transform: scale(0.4);
       top: 42%;
       left: 27%;
     }
@@ -339,6 +369,13 @@
 
     /*foreground guy*/
     .foreground-sprite {
+      transform: scale(0.45);
+      top: 46%;
+      left: 25%;
+    }
+
+    /*rabbit foreground*/
+    .rabbit-sprite {
       transform: scale(0.45);
       top: 40%;
       left: 25%;
