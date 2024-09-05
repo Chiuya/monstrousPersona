@@ -90,7 +90,8 @@ window.forestQuestions = [
         "answers": [
             {"text": "Yawn -- nothing I haven't seen before.", "value": -1},
             {"text": "Their courage is admirable, however futile.", "value": 1}
-        ]
+        ],
+        "foregroundSprite": {"position": [20, 10]}
     },
     {
         "mbti": "sn",
