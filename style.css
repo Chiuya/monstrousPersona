@@ -155,7 +155,7 @@
     background: url("images/forest/0sprite.png");
     animation: fore-sprite 2s steps(4) infinite;
     transform: scale(0.4);
-    top: 36%;
+    top: 37%;
     left: 10%;
   }
 
