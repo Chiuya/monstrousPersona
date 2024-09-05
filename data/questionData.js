@@ -79,7 +79,7 @@ window.forestQuestions = [
         "mbti": "jp",
         "question": "Rain pours from the sky...",
         "answers": [
-            {"text": "What a pain, I have to readjust all my traps", "value": -1},
+            {"text": "What a pain, I have to re-adjust all my traps", "value": -1},
             {"text": "This will hide my footprints!", "value": 1}
         ],
         "foregroundSprite": {"position": [20, 10]}
@@ -198,7 +198,7 @@ window.dungeonQuestions = [
         "mbti": "jp",
         "question": "A gust of wind sweeps the halls, extinguishing all the torches.",
         "answers": [
-            {"text": "What a pain, I have to relight them all.", "value": -1},
+            {"text": "What a pain, I have to re-light them all.", "value": -1},
             {"text": "Perfect, they won't see me coming!", "value": 1}
         ],
         "foregroundSprite": {"position": [50, -40]}
