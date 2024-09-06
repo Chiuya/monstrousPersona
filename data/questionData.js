@@ -68,7 +68,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "sn",
-        "question": "What do you rely on to pursue your prey?",
+        "question": "What do you rely on to track your prey?",
         "answers": [
             {"text": "Footprints and the scent of sweat in the air.", "value": -1},
             {"text": "My instincts have never been wrong.", "value": 1}
@@ -80,7 +80,7 @@ window.forestQuestions = [
         "question": "Rain pours from the sky...",
         "answers": [
             {"text": "What a pain, I have to re-adjust all my traps", "value": -1},
-            {"text": "This will hide my footprints!", "value": 1}
+            {"text": "Perfect! This will hide my footprints.", "value": 1}
         ],
         "foregroundSprite": {"position": [20, 10]}
     },
@@ -95,7 +95,7 @@ window.forestQuestions = [
     },
     {
         "mbti": "sn",
-        "question": "You lay a trap for your prey. How do you set it up?",
+        "question": "You lay a new trap for your prey. How do you set it up?",
         "answers": [
             {"text": "Everything is in its place -- no room for error.", "value": -1},
             {"text": "Put it where I'm sure they'll run.", "value": 1}
@@ -116,7 +116,7 @@ window.forestQuestions = [
         "question": "Finally, there's nowhere to run.",
         "answers": [
             {"text": "It was all planned--this was inevitable.", "value": -1},
-            {"text": "You've run enough--it's time to face your fate.", "value": 1}
+            {"text": "I’m sorry... I can’t stop...", "value": 1}
         ],
         "foregroundSprite": {"position": [20, 10]}
     },
@@ -188,7 +188,7 @@ window.dungeonQuestions = [
     },
     {
         "mbti": "sn",
-        "question": "What do you rely on to pursue your prey?",
+        "question": "What do you rely on to track your prey?",
         "answers": [
             {"text": "Footprints and the scent of sweat in the air.", "value": -1},
             {"text": "My instincts have never been wrong.", "value": 1}
@@ -236,7 +236,7 @@ window.dungeonQuestions = [
         "question": "Finally, there's nowhere to run.",
         "answers": [
             {"text": "It was all planned--this was inevitable.", "value": -1},
-            {"text": "You've run enough--it's time to face your fate.", "value": 1}
+            {"text": "I’m sorry... I can’t stop...", "value": 1}
         ],
         "foregroundSprite": {"position": [-25, 0]}
     },
