@@ -28,7 +28,7 @@ function start() {
 }
 
 function shareQuiz() {
-  navigator.clipboard.writeText("https://chiuya.github.io/personalityQ/");
+  navigator.clipboard.writeText("https://chiuya.github.io/monstrousPersona/");
   //show snackbar
   var x = document.getElementById("snackbar");
   x.className = "show";
@@ -36,5 +36,5 @@ function shareQuiz() {
 }
 
 function goRepo() {
-  window.open("https://github.com/Chiuya/personalityQ", "_blank");
+  window.open("https://github.com/Chiuya/monstrousPersona", "_blank");
 }
